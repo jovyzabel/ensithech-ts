@@ -1,0 +1,17 @@
+# PNPM
+node_modules/
+pnpm-lock.yaml
+
+# Logs
+*.log
+
+# Env
+.env
+.env.local
+
+# Build output
+apps/frontend/.next/
+apps/backend/dist/
+
+# Prisma
+apps/backend/prisma/dev.db

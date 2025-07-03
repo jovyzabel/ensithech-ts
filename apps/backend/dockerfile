@@ -1,0 +1,11 @@
+FROM node:latest-alpine
+
+WORKDIR /app
+
+COPY . .
+
+RUN pnpm install --frozen-lockfile
+
+RUN pnpm build
+
+CMD ["node", "dist/index.js"]
